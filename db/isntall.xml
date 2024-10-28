@@ -1,0 +1,18 @@
+<XMLDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ PATH="block/teachertiming/db" VERSION="20200131" COMMENT="XMLDB file for Moodle plugin block/teachertiming"
+  xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+<TABLES>
+<TABLE NAME="classtiming" COMMENT="Default comment for teachers">
+<FIELDS>
+<FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+<FIELD NAME="classstartdate" TYPE="datetime" LENGTH="30" NOTNULL="true" />
+<FIELD NAME="classenddate" TYPE="datetime" LENGTH="30" NOTNULL="true"/>
+
+
+</FIELDS>
+<KEYS>
+<KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+</KEYS>
+</TABLE>
+</TABLES>
+</XMLDB>
